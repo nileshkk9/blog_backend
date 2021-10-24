@@ -43,3 +43,39 @@ Sun Oct 24 2021 17:10:39 GMT+0530 (India Standard Time) - TypeError: blogService
     at next (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/route.js:137:13)
     at auth (/home/nileshkk9/Desktop/Assignment/backend/src/util/auth.js:19:9)
     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+Sun Oct 24 2021 23:15:22 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'blogid' of undefined
+    at /home/nileshkk9/Desktop/Assignment/backend/src/routes/blog.js:40:57
+    at Layer.handle [as handle_request] (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/route.js:137:13)
+    at auth (/home/nileshkk9/Desktop/Assignment/backend/src/util/auth.js:19:9)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+Sun Oct 24 2021 23:15:57 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'blogid' of undefined
+    at /home/nileshkk9/Desktop/Assignment/backend/src/routes/blog.js:40:57
+    at Layer.handle [as handle_request] (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/route.js:137:13)
+    at auth (/home/nileshkk9/Desktop/Assignment/backend/src/util/auth.js:19:9)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+Sun Oct 24 2021 23:16:24 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'blogid' of undefined
+    at /home/nileshkk9/Desktop/Assignment/backend/src/routes/blog.js:40:57
+    at Layer.handle [as handle_request] (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/route.js:137:13)
+    at auth (/home/nileshkk9/Desktop/Assignment/backend/src/util/auth.js:19:9)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+Sun Oct 24 2021 23:16:48 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'blogid' of undefined
+    at /home/nileshkk9/Desktop/Assignment/backend/src/routes/blog.js:41:57
+    at Layer.handle [as handle_request] (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/route.js:137:13)
+    at auth (/home/nileshkk9/Desktop/Assignment/backend/src/util/auth.js:19:9)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+Sun Oct 24 2021 23:17:51 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'blogid' of undefined
+    at /home/nileshkk9/Desktop/Assignment/backend/src/routes/blog.js:41:57
+    at Layer.handle [as handle_request] (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/route.js:137:13)
+    at auth (/home/nileshkk9/Desktop/Assignment/backend/src/util/auth.js:19:9)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+Sun Oct 24 2021 23:18:16 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'blogid' of undefined
+    at /home/nileshkk9/Desktop/Assignment/backend/src/routes/blog.js:40:57
+    at Layer.handle [as handle_request] (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/nileshkk9/Desktop/Assignment/backend/node_modules/express/lib/router/route.js:137:13)
+    at auth (/home/nileshkk9/Desktop/Assignment/backend/src/util/auth.js:19:9)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)

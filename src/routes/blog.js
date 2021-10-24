@@ -25,5 +25,22 @@ router.get("/blogs/showall", auth, async (req, res, next) => {
     }
 });
 
+router.get("/blogs/showactiveposts", async (req, res, next) => {
+    try {
+        const data = await blogService.showactiveposts();
+        res.json(data);
+    } catch (error) {
+        next(error)
+    }
+});
 
+
+router.post("/blogs/approve", auth, async (req, res, next) => {
+    try {
+        const data = await blogService.approve(req.body.blogid);
+        res.json(data);
+    } catch (error) {
+        next(error)
+    }
+});
 module.exports = router;
