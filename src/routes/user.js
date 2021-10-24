@@ -13,16 +13,16 @@ router.post("/users/login", async (req, res, next) => {
     }
 });
 
-router.post("/users/logout", auth, async (req, res) => {
+router.post("/users/logout", auth, async (req, res, next) => {
     try {
         const logoutData = await userService.logout(req);
         res.json({ mesage: "Logout Successful" });
-    } catch (error) {
+    } catch (err) {
         next(err)
     }
 });
 
-router.post("/users/createuser", async (req, res) => {
+router.post("/users/createuser", async (req, res, next) => {
     const userObj = new User(req.body);
 
     try {
@@ -30,7 +30,7 @@ router.post("/users/createuser", async (req, res) => {
         if (addedUserData)
             res.status(201).json({ message: "Registered Successfully" });
 
-    } catch (e) {
+    } catch (err) {
         next(err)
     }
 

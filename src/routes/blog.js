@@ -15,6 +15,15 @@ router.post("/blogs/push", auth, async (req, res) => {
         res.status(500).send(error);
     }
 });
+// for admin
+router.get("/blogs/showall", auth, async (req, res, next) => {
+    try {
+        const data = await blogService.showAll();
+        res.json(data);
+    } catch (error) {
+        next(error)
+    }
+});
 
 
 module.exports = router;
