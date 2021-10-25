@@ -7,6 +7,7 @@ const router = express.Router();
 
 router.post("/blogs/push", auth, async (req, res) => {
     try {
+        console.log(req.body.title);
         req.body.owner = req.user._id;
         const blog = new Blog(req.body);
         const insertedData = await blogService.push(blog);
@@ -38,6 +39,15 @@ router.get("/blogs/showactiveposts", async (req, res, next) => {
 router.post("/blogs/approve", auth, async (req, res, next) => {
     try {
         const data = await blogService.approve(req.body.blogid);
+        res.json(data);
+    } catch (error) {
+        next(error)
+    }
+});
+
+router.post("/blogs/delete", auth, async (req, res, next) => {
+    try {
+        const data = await blogService.delete(req.body.blogid);
         res.json(data);
     } catch (error) {
         next(error)

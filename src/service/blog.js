@@ -46,4 +46,15 @@ blog.approve = async (id) => {
 
 
 }
+
+blog.delete = async (id) => {
+    console.log(id);
+    const deletedData = await Blog.deleteOne({ _id: id });
+    if (!deletedData) {
+        const error = new Error("No Blogs Found");
+        error.status = 400;
+        throw error;
+    }
+    return deletedData;
+}
 module.exports = blog;
