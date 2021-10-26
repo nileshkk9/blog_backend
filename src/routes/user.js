@@ -22,6 +22,16 @@ router.post("/users/logout", auth, async (req, res, next) => {
     }
 });
 
+
+router.post("/users/auth", auth, async (req, res, next) => {
+    try {
+        const data = { name: req.user.name, role: req.user.role }
+        res.json(data);
+    } catch (err) {
+        next(err)
+    }
+});
+
 router.post("/users/createuser", async (req, res, next) => {
     const userObj = new User(req.body);
 
